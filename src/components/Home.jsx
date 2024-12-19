@@ -40,7 +40,7 @@ const Home = ({ open, setOpen }) => {
         });
 
         try {
-            const res = await axios.post("http://localhost:4000/api/v1/user/register", formDataToSend, {
+            const res = await axios.post("https://vacompanybackend.onrender.com/api/v1/user/register", formDataToSend, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

@@ -8,7 +8,7 @@ const AllUserTable = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axios.get('http://localhost:4000/api/v1/user/getalluser');
+                const res = await axios.get('https://vacompanybackend.onrender.com/api/v1/user/getalluser');
                 setUsers(res.data.alluser);
                 setLoading(false);
             } catch (error) {
